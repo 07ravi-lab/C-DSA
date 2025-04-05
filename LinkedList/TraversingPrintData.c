@@ -12,7 +12,7 @@ void print_data(struct node *head){
     struct node *ptr =NULL;
     ptr = head;
     while(ptr != NULL){
-        printf("%d",ptr->data);
+        printf("%d ",ptr->data);
         ptr = ptr ->link;
     }
 }
