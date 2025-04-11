@@ -2,21 +2,25 @@
 #include <stdlib.h>
 
 // Define the structure for a node
-struct node {
+struct node
+{
     int data;
     struct node *next;
 };
 
 // Function to traverse and print the linked list
-void linkListTraversal(struct node *head) {
+void linkListTraversal(struct node *head)
+{
     struct node *ptr = head;
-    while (ptr != NULL) {
+    while (ptr != NULL)
+    {
         printf("Element is %d\n", ptr->data);
         ptr = ptr->next;
     }
 }
 
-int main() {
+int main()
+{
     struct node *head;
     struct node *second;
     struct node *third;
